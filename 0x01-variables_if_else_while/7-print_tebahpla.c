@@ -13,15 +13,14 @@ int main(void)
 	int j;
 
 	for (ch = 'a' ; ch <= 'z' ; ch++)
-    {
-        alphabet[i] = ch;
-        i++;
-    }
-    for (j = sizeof(alphabet) ; j >= 0 ; j--)
-    {
-        printf("%c",alphabet[j]);
-    }
-
+	{
+		alphabet[i] = ch;
+		i++;
+	}
+	for (j = sizeof(alphabet) ; j >= 0 ; j--)
+	{
+		printf("%c",alphabet[j]);
+	}
 	putchar('\n');
 	return (0);
 }
