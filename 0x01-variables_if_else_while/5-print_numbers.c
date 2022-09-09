@@ -13,7 +13,7 @@ int main(void)
 	{
 		print("%d", i);
 	}
-	print("\n");
+	printf("\n");
 
 	return (0);
 }
