@@ -11,12 +11,14 @@ int main(void)
 	char alphabet[26];
 	char ch;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (ch = 'a' ; ch <= 'z' ; ch++)
     {
         alphabet[i] = ch;
         i++;
     }
-    for (int j = sizeof(alphabet) ; j >= 0; j--)
+	int j;
+
+    for (j = sizeof(alphabet) ; j >= 0 ; j--)
     {
         printf("%c",alphabet[j]);
     }
