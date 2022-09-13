@@ -1,6 +1,9 @@
 #include "main.h"
+/*
+ * printing _putchar
+ * */
 
-int main (void)
+int main(void)
 {
 	char *a = "_putchar";
 
