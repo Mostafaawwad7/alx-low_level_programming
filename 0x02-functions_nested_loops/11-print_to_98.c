@@ -22,9 +22,9 @@ void print_to_98(int n)
 	}
 	else if (n > 98)
 	{
-		for (j = n ; i >= 99 ; i--)
+		for (j = n ; j >= 99 ; j--)
 		{
-		printf("%d, ",i);
+		printf("%d, ",j);
 		}
 	printf("98");
 	}
