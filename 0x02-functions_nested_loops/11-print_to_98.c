@@ -1,36 +1,21 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
- * print_to_98 - prints all natural numbers from n to 98.
- *
- * @n: to be computed
- * Return: Always 0.
+ * print_to_98 - prints all natural numbers from n to 98
+ *@n: starting point
+ * Return: returns nothing
  */
+
 void print_to_98(int n)
 {
-	int i;
-	int j;
-
-	if(n < 98)
+	if (n <= 98)
 	{
-		for (i = n ; i <= 97 ; i++)
-		{
-		printf("%d, ",i);
-		}
-	printf("98 ");
-	}
-	else if (n > 98)
-	{
-		for (j = n ; j >= 99 ; j--)
-		{
-		printf("%d, ",j);
-		}
-	printf("98 ");
+		for (n = n; n <= 97; n++)
+			printf("%d, ", n);
 	}
 	else
-	{
-		printf("98 ");
-	}
-    
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+	printf("98\n");
 }
