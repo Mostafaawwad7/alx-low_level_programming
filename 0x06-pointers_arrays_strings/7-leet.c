@@ -1,22 +1,36 @@
 #include "main.h"
-/**
-* leet - function that encode a string
-*@str:string that will be encoded
-*Return:returns encoded string
-*/
 
+/**
+ * *leet - check the code for Holberton School students.
+ *
+ * @str: string.
+ * Return: string.
+ */
 char *leet(char *str)
 {
-	int index1 = 0, index2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i;
 
-	while (str[++index1])
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (index2 = 0; index2 <= 7; index2++)
+		if (str[i] == 'a' || str[i] == 'A')
 		{
-			if (str[index1] == leet[index2] ||
-			 str[index1] - 32 == leet[index2])
-				str[index1] = index2 + '0';
+			str[i] = '4';
+		}
+		else if (str[i] == 'e' || str[i] == 'E')
+		{
+			str[i] = '3';
+		}
+		else if (str[i] == 'o' || str[i] == 'O')
+		{
+			str[i] = '0';
+		}
+		else if (str[i] == 't' || str[i] == 'T')
+		{
+			str[i] = '7';
+		}
+		else if (str[i] == 'l' || str[i] == 'L')
+		{
+			str[i] = '1';
 		}
 	}
 	return (str);
